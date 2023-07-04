@@ -1,6 +1,6 @@
 # Nama Proyek
 
-🌐 Aplikasi Database Penyedia Layanan Internet (ISP)
+🌐 Aplikasi Database Pelanggan Penyedia Layanan Internet (ISP) Sederhana
 
 ## Identitas
 
@@ -10,7 +10,7 @@
 
 ## Deskripsi
 
-Proyek ini adalah aplikasi databse penyedia layanan internet (ISP) sederhana yang memungkinkan pengguna untuk mengelola informasi pelanggan, paket internet, dan langganan pelanggan. Sistem ini menyediakan fungsionalitas untuk menambahkan, mengedit, dan menghapus data pelanggan, mengelola paket internet.
+Proyek ini adalah aplikasi database pelanggan penyedia layanan internet (ISP) sederhana yang memungkinkan pengguna untuk mengelola informasi pelanggan, paket internet, dan langganan pelanggan. Sistem ini menyediakan fungsionalitas untuk menambahkan, mengedit, dan menghapus data pelanggan, mengelola paket internet.
 
 ## Fitur
 
