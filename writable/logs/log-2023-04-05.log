@@ -1,0 +1,214 @@
+ERROR - 2023-04-05 17:55:18 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/SQLite3/Connection.php:92
+Stack trace:
+#0 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/BaseConnection.php(573): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists()
+#6 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-04-05 17:56:35 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/SQLite3/Connection.php:92
+Stack trace:
+#0 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/BaseConnection.php(573): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists()
+#6 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2023-04-05 18:13:40 --> Call to a member function getCustomer() on null
+in APPPATH/Controllers/CustomerController.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-04-05 18:14:31 --> Call to a member function getCustomer() on null
+in APPPATH/Controllers/CustomerController.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-04-05 18:17:03 --> Call to a member function getCustomer() on null
+in APPPATH/Controllers/CustomerController.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-04-05 18:17:29 --> Call to a member function getCustomer() on null
+in APPPATH/Controllers/CustomerController.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-04-05 18:17:56 --> Call to a member function getCustomer() on null
+in APPPATH/Controllers/CustomerController.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-04-05 18:18:47 --> Call to a member function getCustomer() on null
+in APPPATH/Controllers/CustomerController.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-04-05 18:18:59 --> Call to a member function findAll() on null
+in APPPATH/Controllers/CustomerController.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-04-05 18:20:48 --> Call to a member function findAll() on null
+in APPPATH/Controllers/CustomerController.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-04-05 18:21:21 --> Call to a member function findAll() on null
+in APPPATH/Controllers/CustomerController.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-04-05 18:25:11 --> Call to a member function findAll() on null
+in APPPATH/Controllers/CustomerController.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-04-05 18:30:11 --> Call to a member function findAll() on null
+in APPPATH/Controllers/CustomerController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-04-05 18:35:13 --> Call to a member function findAll() on null
+in APPPATH/Controllers/CustomerController.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-04-05 18:35:14 --> Call to a member function findAll() on null
+in APPPATH/Controllers/CustomerController.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-04-05 18:37:06 --> Undefined property: App\Controllers\CustomerController::$db
+in APPPATH/Controllers/CustomerController.php on line 14.
+ 1 APPPATH/Controllers/CustomerController.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-04-05 18:49:32 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: db_customers in /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/BaseConnection.php(691): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#7 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/app/Models/CustomerModel.php(46): CodeIgniter\BaseModel->findAll()
+#8 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/app/Controllers/CustomerController.php(14): App\Models\CustomerModel->getCustomer()
+#9 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+#10 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2023-04-05 18:49:32 --> SQLite3::query(): Unable to prepare statement: 1, no such table: db_customers
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CustomerModel.php(46): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/CustomerController.php(14): App\Models\CustomerModel->getCustomer()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-04-05 18:49:57 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: db_customers in /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/BaseConnection.php(691): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#7 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/app/Models/CustomerModel.php(46): CodeIgniter\BaseModel->findAll()
+#8 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/app/Controllers/CustomerController.php(14): App\Models\CustomerModel->getCustomer()
+#9 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+#10 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2023-04-05 18:49:57 --> SQLite3::query(): Unable to prepare statement: 1, no such table: db_customers
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CustomerModel.php(46): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/CustomerController.php(14): App\Models\CustomerModel->getCustomer()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-04-05 18:50:53 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: customers in /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/BaseConnection.php(691): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#7 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/app/Models/CustomerModel.php(46): CodeIgniter\BaseModel->findAll()
+#8 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/app/Controllers/CustomerController.php(14): App\Models\CustomerModel->getCustomer()
+#9 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+#10 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /home/nixon/Kuliah/Pem-Web/CI4/codeigniter4-framework-e91e4fa/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2023-04-05 18:50:53 --> SQLite3::query(): Unable to prepare statement: 1, no such table: customers
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CustomerModel.php(46): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/CustomerController.php(14): App\Models\CustomerModel->getCustomer()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CustomerController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
