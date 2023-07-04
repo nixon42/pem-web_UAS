@@ -26,12 +26,12 @@ Proyek ini adalah aplikasi database pelanggan penyedia layanan internet (ISP) se
 
 ## Teknologi yang Digunakan
 
-🔧 PHP: Bahasa pemrograman backend
-🔧 CodeIgniter 4: Framework PHP
-🔧 SQLite: Sistem manajemen database
-🔧 HTML: Bahasa markup untuk membangun halaman web
-🔧 CSS: Bahasa styling untuk halaman web
-🔧 Bootstrap: Framework CSS untuk desain responsif
+-🔧 PHP: Bahasa pemrograman backend
+-🔧 CodeIgniter 4: Framework PHP
+-🔧 SQLite: Sistem manajemen database
+-🔧 HTML: Bahasa markup untuk membangun halaman web
+-🔧 CSS: Bahasa styling untuk halaman web
+-🔧 Bootstrap: Framework CSS untuk desain responsif
 
 ## Instalasi
 
