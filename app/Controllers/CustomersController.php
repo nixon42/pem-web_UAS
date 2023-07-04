@@ -9,17 +9,27 @@ class CustomersController extends BaseController
 {
     public function index()
     {
-        // AMBIL DATA
-        $model = new CustomerModel();
+        $customerModel = new CustomerModel();
+        $inetModel = new InetModel();
 
-        // Join ke tabel inets
-        $builder = $model->db->table('customers');
+        // Filter berdasarkan paket internet
+        $inet = $this->request->getGet('inet'); // Ambil nilai filter dari query string
+
+        $builder = $customerModel->db->table('customers');
         $builder->select('customers.*, inets.inet_name as inet');
         $builder->join('inets', 'inets.inet_id = customers.inet', 'left');
+
+        if (!empty($inet)) {
+            $builder->where('inets.inet_id', $inet);
+        }
+
         $data['customers'] = $builder->get()->getResultArray();
+        $data['inets'] = $inetModel->findAll(); // Mendapatkan data paket internet
 
         return view('customers_list', $data);
     }
+
+
 
     public function create()
     {

@@ -6,14 +6,25 @@
     <div class="row">
         <div class="col-md-12">
             <h1>Pelanggan</h1>
-	        <!-- <?= print_r($customers)?> -->
+            <form method="get" action="<?= site_url('customers') ?>" class="my-4">
+                <div class="form-group">
+                    <label for="inet">Filter Paket Internet:</label>
+                    <select name="inet" class="form-control">
+                        <option value="">Semua</option>
+                        <?php foreach ($inets as $inet) : ?>
+                            <option value="<?= $inet['inet_id'] ?>"><?= $inet['inet_name'] ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Filter</button>
+            </form>
+
             <table class="table table-striped">
                 <thead class="thead-dark">
                     <tr>
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Paket</th>
-                        <th>Aksi</th>
+                        <th>Inet</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -22,10 +33,6 @@
                             <td><?= $customer['customer_name'] ?></td>
                             <td><?= $customer['email'] ?></td>
                             <td><?= $customer['inet'] ?></td>
-                            <td>
-                                <a href="<?= site_url('customers/edit/' . $customer['customer_id']) ?>" class="btn btn-primary">Edit</a>
-                                <a href="<?= site_url('customers/delete/' . $customer['customer_id']) ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus?')">Hapus</a>
-                            </td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>

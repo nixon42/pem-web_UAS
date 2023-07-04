@@ -27,11 +27,26 @@ Proyek ini adalah aplikasi database pelanggan penyedia layanan internet (ISP) se
 - Menambahkan pelanggan baru
 - Mengedit informasi pelanggan
 - Menghapus data pelanggan
+- mengfilter pelanggan sesuia paket internet
 
 💻 Manajemen Paket Internet:
 - Menambahkan paket internet baru
 - Mengedit detail paket internet
 - Menghapus paket internet
+
+## Fitur Filter
+
+### Filter Berdasarkan Paket Internet
+
+Anda dapat menggunakan fitur filter untuk memfilter pelanggan berdasarkan paket internet yang mereka gunakan. Untuk melakukannya, ikuti langkah-langkah berikut:
+
+1. Buka halaman `customers_list` pada aplikasi.
+
+2. Temukan elemen select box dengan label "Filter Paket Internet".
+
+3. Pilih salah satu opsi paket internet dari select box. Opsi "Semua" akan menampilkan semua pelanggan tanpa filter.
+
+4. Klik tombol "Filter" untuk melihat hasil filter.
 
 ## Teknologi yang Digunakan
 
