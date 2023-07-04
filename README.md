@@ -7,6 +7,15 @@
 - Nama: Alief Cahyo Utomo
 - NPM: 2113030101
 - Prodi: Sistem Informatika
+  
+## Ketentuan
+- ✅ Penggunaan Controller
+- ✅ Penggunaan View
+- ✅ Penggunaan Model
+- ✅ Penggunaan Bootstrap
+- ✅ Penggunaan Helper
+- ✅ Terdapat proses INSERT, UPDATE, DELETE, SELECT yang terimplementasi
+- ✅ Minimal terdapat 1 tabel
 
 ## Deskripsi
 
