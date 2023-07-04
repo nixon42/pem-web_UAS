@@ -1,54 +1,51 @@
-# CodeIgniter 4 Framework
+# Nama Proyek
 
-## What is CodeIgniter?
+🌐 Aplikasi Database Penyedia Layanan Internet (ISP)
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## Identitas
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+- Nama: Alief Cahyo Utomo
+- NPM: 2113030101
+- Prodi: Sistem Informatika
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+## Deskripsi
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+Proyek ini adalah aplikasi databse penyedia layanan internet (ISP) sederhana yang memungkinkan pengguna untuk mengelola informasi pelanggan, paket internet, dan langganan pelanggan. Sistem ini menyediakan fungsionalitas untuk menambahkan, mengedit, dan menghapus data pelanggan, mengelola paket internet.
 
-## Important Change with index.php
+## Fitur
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+👤 Manajemen Pelanggan:
+- Menambahkan pelanggan baru
+- Mengedit informasi pelanggan
+- Menghapus data pelanggan
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+💻 Manajemen Paket Internet:
+- Menambahkan paket internet baru
+- Mengedit detail paket internet
+- Menghapus paket internet
 
-**Please** read the user guide for a better explanation of how CI4 works!
+## Teknologi yang Digunakan
 
-## Repository Management
+🔧 PHP: Bahasa pemrograman backend
+🔧 CodeIgniter 4: Framework PHP
+🔧 SQLite: Sistem manajemen database
+🔧 HTML: Bahasa markup untuk membangun halaman web
+🔧 CSS: Bahasa styling untuk halaman web
+🔧 Bootstrap: Framework CSS untuk desain responsif
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+## Instalasi
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+1. Clone repositori: `git clone https://github.com/nixon42/pem-web_UAS`
+2. Masuk ke direktori proyek: `cd pem-web_UAS`
+3. Pasang dependensi: `composer install`
+4. Konfigurasikan koneksi database di `app/Config/Database.php`
+5. Jalankan migrasi database: `php spark migrate`
+6. Jalankan server pengembangan: `php spark serve`
+7. Akses aplikasi di browser Anda melalui `http://localhost:8080`
 
-## Contributing
+## Penggunaan
 
-We welcome contributions from the community.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+1. Buka browser dan kunjungi `http://localhost:8080`
+2. Anda akan diarahkan ke halaman utama
+3. Gunakan menu navigasi untuk mengelola pelanggan, paket internet, dan langganan
+4. Klik tombol yang sesuai untuk menambahkan, mengedit, atau menghapus data
